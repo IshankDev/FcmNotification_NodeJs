@@ -1,0 +1,14 @@
+{
+  "name": "firebasefcm",
+  "version": "1.0.0",
+  "description": "A task for notification",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ishank",
+  "license": "ISC",
+  "dependencies": {
+    "firebase-admin": "^8.9.0"
+  }
+}
