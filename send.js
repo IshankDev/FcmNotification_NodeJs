@@ -1,5 +1,7 @@
 
 var admin = require("firebase-admin");
+var functions = require('firebase-functions');
+
 
 var serviceAccount = require("/Users/ishank/NodeJsApiTest/NodeNotificationWork/nodenotificationtest-firebase-adminsdk-aj5w7-f0ec1c6cc1.json");
 
@@ -27,12 +29,18 @@ var options = {
     timeToLive: 60 * 60
 };
 
-admin.messaging().sendToDevice(registrationToken, payload, options)
-    .then(function (response) {
-        console.log("Successfully sent message:", response);
-    })
-    .catch(function (error) {
-        console.log("Error sending message:", error);
-    });
+exports.sendToDevice = functions.https.onCall((data) => {
+
+    admin.messaging().sendToDevice(registrationToken, payload, options)
+        .then(function (response) {
+            console.log("Successfully sent message:", response);
+        })
+        .catch(function (error) {
+            console.log("Error sending message:", error);
+        });
+
+});
+
+
 
 
