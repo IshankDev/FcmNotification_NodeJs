@@ -1,24 +1,9 @@
-
-// // Create and Deploy Your First Cloud Functions
-// // https://firebase.google.com/docs/functions/write-firebase-functions
-//
-// exports.helloWorld = functions.https.onRequest((request, response) => {
-//  response.send("Hello from Firebase!");
-// });
 'use strict';
 
 var functions = require('firebase-functions');
 const admin = require("firebase-admin");
-
-
-/* var serviceAccount = require("/Users/ishank/NodeJsApiTest/NodeNotificationWork/functions/nodenotificationtest-firebase-adminsdk-aj5w7-f0ec1c6cc1.json"); */
 admin.initializeApp();
 
-/* admin.initializeApp({
-     credential: admin.credential.cert(serviceAccount),
-     databaseURL: "https://nodenotificationtest.firebaseio.com"
-});
- */
 
 var registrationToken = "e_3EpuoC-I4:APA91bEqB5w49xT-xrhAnOWClBqco4uwqxLqxbBBaY7--fPwn25uLCRNquw9_A3wURl-SNn8GXH0yApP9IQQ60azpjP7HRs1p8T8Sul-xqYLNqETG_kmJrrpDmnECEch8IPxR3H4D0vy";
 
