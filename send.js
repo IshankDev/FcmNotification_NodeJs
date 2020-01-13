@@ -15,6 +15,10 @@ var payload = {
     notification: {
         title: "Account Deposit",
         body: "A deposit to your savings account has just cleared."
+    },
+    data: {
+        account: "Savings",
+        balance: "$3020.25"
     }
 };
 
