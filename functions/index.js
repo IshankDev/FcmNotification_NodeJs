@@ -5,7 +5,7 @@ const admin = require("firebase-admin");
 admin.initializeApp();
 
 
-var registrationToken = "e_3EpuoC-I4:APA91bEqB5w49xT-xrhAnOWClBqco4uwqxLqxbBBaY7--fPwn25uLCRNquw9_A3wURl-SNn8GXH0yApP9IQQ60azpjP7HRs1p8T8Sul-xqYLNqETG_kmJrrpDmnECEch8IPxR3H4D0vy";
+var registrationToken = "dJhZzoX2ixw:APA91bGSmlvcaFeFtjnnBR8bsnVdZmqM_SGAFp-U6GZhrMAAYQ86TfGSBCftTKTsy8LRfp69ELL7hEX1wXdD1tN24b5Z6Zq73h15MKmRH5IFoMoeuzFwhYlvE6D1r75kshhboZl-DLIu";
 
 var payload = {
 
